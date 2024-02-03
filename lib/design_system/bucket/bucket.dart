@@ -37,7 +37,7 @@ class BucketWidget extends StatelessWidget {
             ],
             keyboardType: TextInputType.number,
             controller: xController,
-            maxLength: 2,
+            maxLength: 3,
           ),
         ),
         Padding(
