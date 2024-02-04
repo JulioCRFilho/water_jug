@@ -1,7 +1,9 @@
 # water_jug
 
-This project aims to satisfy the conditions for the Water Jug Challenge
+This project aims to satisfy the conditions for the `Water Jug Challenge`
 It's presented in a pretty UI with light animations
+The state management used is Flutter's native `setState` method and `Stream Functions and Builders`
+There's no third party libraries used in this project
 
 ## Public Github repository link
 <a href="https://github.com/JulioCRFilho/water_jug">Repository</a>
