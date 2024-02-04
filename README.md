@@ -20,13 +20,13 @@ Our testing covers successful, failure and edge cases to ensure the application 
 ## Instructions to run the program
 This application is made using the `Flutter` sdk within the `Dart` language.
 
-`Steps to run`:
-    `1` - Download the <a href="https://docs.flutter.dev/get-started/install">Flutter SDK</a> accordingly to your Operation System "\n"
-    `2` - Ensure the Flutter version is compatible with the project's version
-    `3` - Add the Flutter path to your Environment Variables
-    `4` - Clone the project using Git clone
-    `5` - Open the project using your favorite IDE
-    `6` - Install the Flutter plugin
+`Steps to run`: </br>
+    `1` - Download the <a href="https://docs.flutter.dev/get-started/install">Flutter SDK</a> accordingly to your Operation System </br>
+    `2` - Ensure the Flutter version is compatible with the project's version </br>
+    `3` - Add the Flutter path to your Environment Variables </br>
+    `4` - Clone the project using Git clone </br>
+    `5` - Open the project using your favorite IDE </br>
+    `6` - Install the Flutter plugin </br>
     `7` - Run the project through your IDE or using the command line flutter run (optionally pass the platform argument)
 
 ## Observation
