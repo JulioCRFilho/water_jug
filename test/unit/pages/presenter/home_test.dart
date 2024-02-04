@@ -12,8 +12,6 @@ void main() {
     _calculationTest(6, 10, 8);
     _calculationTest(8, 13, 1);
     _calculationTest(2, 18, 12);
-    _calculationTest(128, 255, 127);
-    _calculationTest(100, 3, 52);
 
     ///Impossible values expected to fail
     _calculationTest(3, 6, 4, shouldSucceed: false);
@@ -21,6 +19,11 @@ void main() {
     _calculationTest(4, 8, 3, shouldSucceed: false);
     _calculationTest(7, 14, 5, shouldSucceed: false);
     _calculationTest(9, 18, 11, shouldSucceed: false);
+
+    ///Edge cases test
+    _calculationTest(128, 255, 127);
+    _calculationTest(100, 3, 52);
+    _calculationTest(991, 999, 3);
   });
 }
 

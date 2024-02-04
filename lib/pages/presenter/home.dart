@@ -2,7 +2,16 @@ import 'dart:collection';
 
 import 'package:flutter/material.dart';
 import 'package:water_jug/constant/errors.dart';
-import 'package:water_jug/pages/screen/home.dart';
+
+typedef BucketAction = ({
+  int bucketX,
+  int bucketY,
+});
+
+typedef BucketState = ({
+  BucketAction state,
+  List<BucketAction> path,
+});
 
 class HomePresenter {
   final void Function(String error) errorCallback;
@@ -41,8 +50,8 @@ class HomePresenter {
       throw '';
     }
 
-    ///Check if X and Y are different or equal to Z
-    if (x == y && x != z) {
+    ///Check if X and Y are different
+    if (x == y) {
       yield false;
       errorCallback(bucketsMustBeDifferentError);
       throw '';
