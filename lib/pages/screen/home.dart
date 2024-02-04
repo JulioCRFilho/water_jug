@@ -25,12 +25,6 @@ class _HomeScreenState extends State<HomeScreen> {
   Stream<bool>? loading;
 
   @override
-  void initState() {
-    super.initState();
-    loading?.listen((event) { }, onError: null);
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
