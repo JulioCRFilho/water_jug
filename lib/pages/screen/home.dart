@@ -75,6 +75,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ignoring: isLoading,
                       child: OutlinedButton(
                         onPressed: () {
+                          FocusScope.of(context).unfocus();
                           ///Adds the first stream to execution and updates UI
                           setState(() {
                             loading = presenter.calculate(
