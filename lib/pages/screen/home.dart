@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:water_jug/constant/errors.dart';
 import 'package:water_jug/design_system/bucket/bucket.dart';
 import 'package:water_jug/design_system/dialog/error.dart';
 import 'package:water_jug/design_system/text/common.dart';
@@ -111,7 +112,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Stream<bool> executeActions(List<BucketAction> solution) async* {
     if (solution.isEmpty) {
       yield false;
-      _showErrorDialog('There\'s not a possible solution');
+      _showErrorDialog(noPossibleSolutionError);
       throw '';
     }
 

@@ -1,6 +1,7 @@
 import 'dart:collection';
 
 import 'package:flutter/material.dart';
+import 'package:water_jug/constant/errors.dart';
 import 'package:water_jug/pages/screen/home.dart';
 
 class HomePresenter {
@@ -29,21 +30,21 @@ class HomePresenter {
     ///Buckets values are greater than 0
     if (x <= 0 || y <= 0 || z <= 0) {
       yield false;
-      errorCallback('Buckets must be greater than 0');
+      errorCallback(greaterThanZeroError);
       throw '';
     }
 
     ///Z value is not greater than X and Y
     if (z > x && z > y) {
       yield false;
-      errorCallback('Z must be lower than X or Y');
+      errorCallback(zLowerThanXorYError);
       throw '';
     }
 
     ///Check if X and Y are different or equal to Z
     if (x == y && x != z) {
       yield false;
-      errorCallback('X and Y must be different');
+      errorCallback(bucketsMustBeDifferentError);
       throw '';
     }
 
