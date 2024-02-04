@@ -4,7 +4,7 @@ This project aims to satisfy the conditions for the Water Jug Challenge
 It's presented in a pretty UI with light animations
 
 ## Public Github repository link
-<a href="https://github.com/JulioCRFilho/water_jug">Repository</>
+<a href="https://github.com/JulioCRFilho/water_jug">Repository</a>
 
 ### Algorithmic Approach
 The algorithm chose was [BFS] (Breadth-First Search)
