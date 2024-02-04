@@ -20,5 +20,6 @@ class ErrorDialog extends StatelessWidget {
   void show(BuildContext context) => showAdaptiveDialog(
         context: context,
         builder: (context) => this,
+        barrierDismissible: true,
       );
 }
